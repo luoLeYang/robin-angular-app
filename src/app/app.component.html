@@ -1,0 +1,21 @@
+<main class="main">
+	<div class="content">
+		<div class="left-side">
+			<app-registration></app-registration>
+			<button type="button" (click)="showRegistration = true">Add Course</button>
+
+			<form *ngIf="showRegistration" [formGroup]="form">
+				<input type="text" placeholder="Enter Course ID" formControlName="id" />
+				<input type="text" placeholder="Enter Course Code" formControlName="code" />
+				<input type="text" placeholder="Enter Course Description" formControlName="description" />
+				<button type="submit">Submit</button>
+			</form>
+
+			<pre>{{ form.value | json }}</pre>
+			<h1>Hello, {{ title }}</h1>
+			<p>Congratulations! Your app is running.</p>
+		</div>
+	</div>
+</main>
+
+<router-outlet />
