@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Forest and meadow themed page background with soft depth for readability. */
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+	color: #17321c;
+	background-color: #98c98b;
+	background-image:
+		radial-gradient(1200px 520px at 50% -12%, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0)),
+		radial-gradient(900px 420px at 80% 14%, rgba(56, 116, 60, 0.36), rgba(56, 116, 60, 0)),
+		radial-gradient(800px 380px at 20% 22%, rgba(41, 96, 48, 0.29), rgba(41, 96, 48, 0)),
+		linear-gradient(to bottom, #d7ebc8 0%, #b7d59c 37%, #7faf6e 67%, #5f8f4d 100%);
+	background-attachment: fixed;
+}
